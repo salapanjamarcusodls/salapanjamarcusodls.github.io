@@ -88,8 +88,8 @@ p {
     transition: transform 0.2s;
 }
 
-/*.anim:active,*/
-.anim:hover,
+.anim:active,
+/*.anim:hover,*/
 .anim:focus {
     transform: scale(0.9);
 }
