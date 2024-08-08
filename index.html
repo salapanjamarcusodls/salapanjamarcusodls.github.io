@@ -49,8 +49,8 @@
                 </div>
                 <p>Come back tomorrow for check-in day 2</p>
                 <div class="btns">
-                    <button class="btn connect anim" onclick="openButton()">Connect Wallet</button>
-                    <button class="btn invite anim" onclick="setTimeout(() => open_modal(), 100)">Invite friends <span>+10%</span></button>
+                    <a class="btn connect anim" onclick="openButton()">Connect Wallet</a>
+                    <a class="btn invite anim" onclick="setTimeout(() => open_modal(), 100)">Invite friends <span>+10%</span></a>
                 </div>
             </div>
             
@@ -77,6 +77,7 @@
 
             function open_modal() {
                 modalContainer.classList.remove('closed');
+                window.Telegram.WebApp.HapticFeedback.impactOccurred('soft');
             }
             function close_modal() {
                 modalContainer.classList.add('closed');
