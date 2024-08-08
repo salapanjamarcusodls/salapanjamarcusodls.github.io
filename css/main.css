@@ -88,7 +88,7 @@ p {
 .anim {
 	transition: transform .2s;
 }
-.anim:active {
+.anim:active, .anim:focus {
 	transform: scale(.9);
 
 }
